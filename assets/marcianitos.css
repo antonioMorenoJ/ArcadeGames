@@ -1,0 +1,44 @@
+/* Fondo espacial */
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Contenedor del juego */
+#contenedor-juego {
+    margin: auto;
+    width: 800px;
+    height: 550px;
+    border: 4px solid lime;
+    background-color: black;
+    box-shadow: 0px 0px 20px lime;
+}
+
+/* Controles */
+.controls {
+    margin-top: 20px;
+}
+.button_wrapper {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.alien_button {
+    background-color: #00ff00 ; /* Verde neón */
+    color: black ;     
+    border: none ;
+    padding: 10px 20px ;
+    font-size: 18px ;
+    font-family: 'Press Start 2P', cursive ;
+    cursor: pointer ;
+    text-shadow: 1px 1px 5px rgba(0, 255, 0, 0.7) ; /* Efecto neón */
+    transition: all 0.3s ease ;
+}
+.alien_button:hover {
+    background-color: #00cc00; /* Verde más oscuro al pasar el mouse */
+    box-shadow: 0px 0px 10px lime;
+}

@@ -1,0 +1,126 @@
+/* estilos.css */
+body {
+    background-image: url("../assets/fondo1.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+
+
+/* Ajustar el contenedor principal para que ocupe toda la pantalla */
+.container {
+    width: 50%; /* Ocupar todo el ancho */
+    height: 50%; /* Ocupar toda la altura */
+    background: none; /* Elimina el fondo oscuro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none; /* Elimina el efecto de sombra */
+    padding: 20px;
+}
+
+/* Alinear los juegos en una sola fila de izquierda a derecha */
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Espacio entre juegos */
+    width: 100%;
+    flex-wrap: wrap; /* Permite que los juegos se ajusten si hay más */
+    padding: 20px;
+}
+
+/* Ajustar el tamaño de los juegos */
+.game img {
+    width: 150px; /* Imagen más grande */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease-in-out;
+}
+
+.game img:hover {
+    transform: scale(1.2); /* Efecto de zoom más notable */
+}
+
+/* Texto debajo de los juegos */
+.game p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.title-inicio{
+    color:#453b01
+}
+
+
+.title {
+    color: #00ffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+form {
+    margin: 20px 0;
+}
+
+input {
+    background-color: rgba(0, 31, 63, 0.9);
+    color: #fff;
+    border: 2px solid #ffdd00;
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #ffdd00;
+    color: #001f3f;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffd700;
+    transform: scale(1.1);
+}
+
+.login-btn, .register-btn {
+    width: 85%;
+}
+
+.register-btn {
+    background-color: transparent;
+    border: 2px solid #ffdd00;
+    color: #ffdd00;
+    margin-top: 15px;
+}
+
+.register-btn:hover {
+    background-color: #ffdd00;
+    color: #001f3f;
+}
+.description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #00ffff; /* Cyan brillante para mejor contraste */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    max-width: 600px;
+    line-height: 1.5;
+}
